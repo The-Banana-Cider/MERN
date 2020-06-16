@@ -13,6 +13,3 @@
 ### Front-end using `Reactjs`
 
 ----
-
-
-# MERN
