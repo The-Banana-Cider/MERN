@@ -29,7 +29,7 @@ app.set('view engine', 'html')
 Required by EJS
  */
 require("./routes")(app)
-app.get(`/`, (req, res) => {
+app.get("/", (req, res) => {
     // console.log("Appid =",req.appId)
     res.render('index')
 })
