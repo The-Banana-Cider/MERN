@@ -66,12 +66,12 @@ exports.login = async (req, res) => {
                     userId: user.id,
                     type: "accessToken"
                 }, JW_SECRET_ACCESS_TOKEN, {expiresIn: ACCESS_TOKEN_EXP})
-                // console.log(accessToken)
+                // console.log('--',accessToken)
                 refreshToken = sign({
                     userId: user.id,
                     type: "refreshToken"
                 }, JW_SECRET_REFRESH_TOKEN, {expiresIn: REFRESH_TOKEN_EXP})
-                // console.log(refreshToken)
+                // console.log('----',refreshToken)
 
             }
             res.status(200).send({
