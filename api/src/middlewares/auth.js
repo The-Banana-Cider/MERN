@@ -1,7 +1,7 @@
 const {verify} = require('jsonwebtoken')
 const {JW_SECRET_ACCESS_TOKEN} = require('../config')
 exports.auth = (req, res, next) => {
-    const authorization = req.headers.authorization
+    const authorization = req.headers
     if (!authorization) {
         throw new Error("Unauthorized Access")
     }
